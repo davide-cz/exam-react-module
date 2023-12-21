@@ -18,7 +18,8 @@ export default function (){
     useEffect(()=>{
         fetch(`https://api.themoviedb.org/3/search/person?${queryRequest.toString()}`)
         .then(response=>response.json())
-        .then(obj=>setPeopleArray(obj.results))
+        .then(obj=>{setPeopleArray(obj.results)
+            console.log(obj.results) })
 
     },[searchValue])
     
