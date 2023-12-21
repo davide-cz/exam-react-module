@@ -17,7 +17,7 @@ export default function ({id,name,occupation,sex,popularity,works,imgPath}){
 
             </div>
             <div>
-                <h2>{occupation}</h2>
+                <h2>Field: <br/>{occupation}</h2>
                 <p>{sex}</p>
                 <p>Popularity:  {popularity}</p>
                 <div>

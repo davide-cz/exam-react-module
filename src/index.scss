@@ -4,6 +4,7 @@
     box-sizing: border-box;
     background: rgb(151, 151, 151);
     background-color: linear-gradient(162deg, rgb(151, 151, 151) 0%, rgb(249, 246, 212) 61%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 img{
@@ -26,7 +27,8 @@ img{
 }
 .card{
     background: linear-gradient(162deg, rgb(75, 75, 75) 0%, rgb(180, 180, 180) 61%);
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
     border-radius:1rem;
     padding:1rem

@@ -33,13 +33,17 @@ const [error,setError]=useState('')
         console.error(error)})
     },[ id,language ])
     
-    console.log(pers)
-
+    console.log(pers.birthday)
+    /* 
+    const age=2024-Number(pers.birthday.substring(0,4))
+    console.log(age)
+ */
     const person={name:pers.name,
                 gender:pers.gender === 1 ? 'Female' : 'Male', 
                 occupation:pers.known_for_department,
                 profile_path:pers.profile_path , 
-                biography:pers.biography}
+                biography:pers.biography
+                }
     return (
         <>{error ? <div>{error}</div>
 
@@ -52,7 +56,7 @@ const [error,setError]=useState('')
                     <h2>{person.name}</h2>
                     <h4>Field: {person.occupation}</h4>
                     <p>Gender: {person.gender}</p>
-                    <p>Age=</p>
+                    <p>Birthday: {pers.birthday} </p>
                     <p>{person.biography}</p>
                 </div>
             </div>}

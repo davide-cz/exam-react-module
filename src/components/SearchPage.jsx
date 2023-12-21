@@ -36,7 +36,8 @@ export default function (){
     },[searchValue,language])
     
     return(
-        <>{error ? <div>{error}</div>
+        <>
+        {error ? <div>{error}</div>
 
         : <div>
             <SearchBar
@@ -56,7 +57,6 @@ export default function (){
                         works={pers.known_for}
                         imgPath={`https://image.tmdb.org/t/p/w500/${pers.profile_path}`}
                         />
-                    
                         )
                     })
                 }
