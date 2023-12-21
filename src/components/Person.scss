@@ -1,0 +1,11 @@
+img{
+    max-width: 100%;
+}
+.person{
+    display: grid;
+    grid-template-rows: 200px ,  1fr;
+     
+    >figure>img{
+        height: 200px;
+    }
+}

@@ -1,0 +1,60 @@
+:root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(151, 151, 151);
+    background-color: linear-gradient(162deg, rgb(151, 151, 151) 0%, rgb(249, 246, 212) 61%);
+}
+
+img{
+    max-width:100% ;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+
+    >li{
+        list-style-type: none;
+        text-decoration: none;
+    }
+}
+.prof-pic{
+    max-height: 300px;
+    border-radius: 1rem;
+}
+.card{
+    background: linear-gradient(162deg, rgb(75, 75, 75) 0%, rgb(180, 180, 180) 61%);
+    display: flex;
+    gap: 1rem;
+    border-radius:1rem;
+    padding:1rem
+
+}
+.people-reel{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 1rem;
+}
+.link{
+    color: black;
+    text-decoration: none;    
+    padding: 0.25rem;
+        &:hover{
+            cursor: pointer;
+            background-color: rgb(85, 84, 84);
+            color: bisque;
+            border-radius: 0.5rem;
+        }
+}
+.active{
+    color:beige;
+}
+.person-name-link{
+    color: black; &:hover{
+        cursor: pointer;
+        color: bisque;
+        border-radius: 0.5rem;
+    }
+}
